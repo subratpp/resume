@@ -1,0 +1,24 @@
+# LaTeX compilation artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+*.xdy
+
+# Editor
+.vscode/
