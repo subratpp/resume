@@ -1,0 +1,519 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global/global}
+    \entry{panda2027a}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61623815f94e450a6d6e2b6b52a11fba}{%
+           family={Genest},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0e43c35fbbb85b38c0b05b20ac73bc}{%
+           family={Easwaran},
+           familyi={E\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Work-in-Progress}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{fullhashraw}{b8ea5812017a63e36e480b581030fe49}
+      \strng{bibnamehash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authorbibnamehash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authorfullhashraw}{b8ea5812017a63e36e480b581030fe49}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Neurosymbolic Learning of Interpretable Abstraction in Reinforcement Learning}
+      \field{year}{2027}
+      \true{nocite}
+    \endentry
+    \entry{panda2027b}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f37cfd0be84e3f2adf3bc6c168a8e73b}{%
+           family={Yuke},
+           familyi={Y\bibinitperiod},
+           given={Liao},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61623815f94e450a6d6e2b6b52a11fba}{%
+           family={Genest},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f309ced2cb4a360ff310510eea3f6b01}{%
+           family={Zikelic},
+           familyi={Z\bibinitperiod},
+           given={Djordje},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0e43c35fbbb85b38c0b05b20ac73bc}{%
+           family={Easwaran},
+           familyi={E\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Work-in-Progress}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{934d9f54832b5375930df5c73d65e27f}
+      \strng{fullhashraw}{934d9f54832b5375930df5c73d65e27f}
+      \strng{bibnamehash}{934d9f54832b5375930df5c73d65e27f}
+      \strng{authorbibnamehash}{934d9f54832b5375930df5c73d65e27f}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{934d9f54832b5375930df5c73d65e27f}
+      \strng{authorfullhashraw}{934d9f54832b5375930df5c73d65e27f}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Learning Unions of Polytopes as Abstractions and Barriers for the Verification of RL with Discontinuities}
+      \field{year}{2027}
+      \true{nocite}
+    \endentry
+    \entry{panda2025jmlr}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61623815f94e450a6d6e2b6b52a11fba}{%
+           family={Genest},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0e43c35fbbb85b38c0b05b20ac73bc}{%
+           family={Easwaran},
+           familyi={E\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{fullhashraw}{b8ea5812017a63e36e480b581030fe49}
+      \strng{bibnamehash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authorbibnamehash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authorfullhashraw}{b8ea5812017a63e36e480b581030fe49}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JMLR}
+      \field{title}{Approximation-Free Oblique Decision Trees}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{panda2026a}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61623815f94e450a6d6e2b6b52a11fba}{%
+           family={Genest},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0e43c35fbbb85b38c0b05b20ac73bc}{%
+           family={Easwaran},
+           familyi={E\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ECML-PKDD 2026}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{fullhashraw}{b8ea5812017a63e36e480b581030fe49}
+      \strng{bibnamehash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authorbibnamehash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authorfullhashraw}{b8ea5812017a63e36e480b581030fe49}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reasoning with Incremental Knowledge for Sample Efficient Hierarchical Reinforcement Learning}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{panda2025programmatic}{misc}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61623815f94e450a6d6e2b6b52a11fba}{%
+           family={Genest},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0e43c35fbbb85b38c0b05b20ac73bc}{%
+           family={Easwaran},
+           familyi={E\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{fullhashraw}{b8ea5812017a63e36e480b581030fe49}
+      \strng{bibnamehash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authorbibnamehash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{b8ea5812017a63e36e480b581030fe49}
+      \strng{authorfullhashraw}{b8ea5812017a63e36e480b581030fe49}
+      \field{extraname}{5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{AI4X 2025 International Conference}
+      \field{title}{Programmatic Reinforcement Learning for Trustworthy Microgrid Management}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{panda2024methods}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61623815f94e450a6d6e2b6b52a11fba}{%
+           family={Genest},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0e43c35fbbb85b38c0b05b20ac73bc}{%
+           family={Easwaran},
+           familyi={E\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c085d75fb0cf081453ec1ff3e8d27b1e}{%
+           family={Rigo-Mariani},
+           familyi={R\bibinithyphendelim M\bibinitperiod},
+           given={Rémy},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=936c89a1f06374fb9033e7705037bf20}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Pengfeng},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{64d05e77e16054d0e0314298d3107d6e}
+      \strng{fullhashraw}{64d05e77e16054d0e0314298d3107d6e}
+      \strng{bibnamehash}{64d05e77e16054d0e0314298d3107d6e}
+      \strng{authorbibnamehash}{64d05e77e16054d0e0314298d3107d6e}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{64d05e77e16054d0e0314298d3107d6e}
+      \strng{authorfullhashraw}{64d05e77e16054d0e0314298d3107d6e}
+      \field{extraname}{6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sustainable Energy, Grids and Networks}
+      \field{title}{Methods for mitigating uncertainty in real-time operations of a connected microgrid}
+      \field{volume}{38}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{101334}
+      \range{pages}{1}
+    \endentry
+    \entry{dtsemnet}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61623815f94e450a6d6e2b6b52a11fba}{%
+           family={Genest},
+           familyi={G\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b0e43c35fbbb85b38c0b05b20ac73bc}{%
+           family={Easwaran},
+           familyi={E\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94afbc27d84d6e232201b6f0b6938ca}{%
+           family={Suganthan},
+           familyi={S\bibinitperiod},
+           given={Ponnuthurai\bibnamedelima Nagaratnam},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOS Press}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{49b758b8dc4ea4c9506da45f3926a967}
+      \strng{fullhashraw}{49b758b8dc4ea4c9506da45f3926a967}
+      \strng{bibnamehash}{49b758b8dc4ea4c9506da45f3926a967}
+      \strng{authorbibnamehash}{49b758b8dc4ea4c9506da45f3926a967}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{49b758b8dc4ea4c9506da45f3926a967}
+      \strng{authorfullhashraw}{49b758b8dc4ea4c9506da45f3926a967}
+      \field{extraname}{7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ECAI 2024}
+      \field{month}{10}
+      \field{title}{Vanilla Gradient Descent for Oblique Decision Trees}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.3233/faia240607
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3233/FAIA240607
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3233/FAIA240607
+      \endverb
+    \endentry
+    \entry{panda2021user}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=846070df9bc31fc32290f3f25da1db4c}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Ansuman},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2609f33c3763288a806a9c8bc7edf89}{%
+           family={Bhattacharya},
+           familyi={B\bibinitperiod},
+           given={Arani},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{750306395e4dd5d00a17c36c6c6c28fa}
+      \strng{fullhashraw}{750306395e4dd5d00a17c36c6c6c28fa}
+      \strng{bibnamehash}{750306395e4dd5d00a17c36c6c6c28fa}
+      \strng{authorbibnamehash}{750306395e4dd5d00a17c36c6c6c28fa}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{750306395e4dd5d00a17c36c6c6c28fa}
+      \strng{authorfullhashraw}{750306395e4dd5d00a17c36c6c6c28fa}
+      \field{extraname}{8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 IEEE International Conference on Web Services (ICWS)}
+      \field{title}{User allocation in mobile edge computing: A deep reinforcement learning approach}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{447\bibrangedash 458}
+      \range{pages}{12}
+    \endentry
+    \entry{panda2021service}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4d3a6c78116d840e0b28c0dc6d344e9}{%
+           family={Ray},
+           familyi={R\bibinitperiod},
+           given={Kaustabha},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=846070df9bc31fc32290f3f25da1db4c}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Ansuman},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{fullhashraw}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{bibnamehash}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{authorbibnamehash}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{authorfullhashraw}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \field{extraname}{9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Service-Oriented Computing}
+      \field{title}{Service allocation/placement in multi-access edge computing with workload fluctuations}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{747\bibrangedash 755}
+      \range{pages}{9}
+    \endentry
+    \entry{panda2020dynamic}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907cc2ca7741cbdcf45c830275a041ab}{%
+           family={Panda},
+           familyi={P\bibinitperiod},
+           given={Subrat\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4d3a6c78116d840e0b28c0dc6d344e9}{%
+           family={Ray},
+           familyi={R\bibinitperiod},
+           given={Kaustabha},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=846070df9bc31fc32290f3f25da1db4c}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Ansuman},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{878313b87ba66083d194149017090e3c}
+      \strng{fullhash}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{fullhashraw}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{bibnamehash}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{authorbibnamehash}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{authornamehash}{878313b87ba66083d194149017090e3c}
+      \strng{authorfullhash}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \strng{authorfullhashraw}{00dd465f8cc4d55e7a75b5d64fac062d}
+      \field{extraname}{10}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Service-Oriented Computing}
+      \field{title}{Dynamic edge user allocation with user specified QoS preferences}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{187\bibrangedash 197}
+      \range{pages}{11}
+    \endentry
+    \entry{lim:2006:thesis}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0bcf893fe776f3abb3b72e9c58a1e8f5}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Lian\bibnamedelima Tze},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {School of Computer Sciences, Universiti Sains Malaysia}%
+      }
+      \list{location}{1}{%
+        {Penang, Malaysia}%
+      }
+      \strng{namehash}{0bcf893fe776f3abb3b72e9c58a1e8f5}
+      \strng{fullhash}{0bcf893fe776f3abb3b72e9c58a1e8f5}
+      \strng{fullhashraw}{0bcf893fe776f3abb3b72e9c58a1e8f5}
+      \strng{bibnamehash}{0bcf893fe776f3abb3b72e9c58a1e8f5}
+      \strng{authorbibnamehash}{0bcf893fe776f3abb3b72e9c58a1e8f5}
+      \strng{authornamehash}{0bcf893fe776f3abb3b72e9c58a1e8f5}
+      \strng{authorfullhash}{0bcf893fe776f3abb3b72e9c58a1e8f5}
+      \strng{authorfullhashraw}{0bcf893fe776f3abb3b72e9c58a1e8f5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the {R}egional {C}omputer {S}cience {P}ostgraduate {C}olloquium ({R}e\textsc{cspc}'06)}
+      \field{title}{Improving Translation Selection with Conceptual Vectors}
+      \field{type}{MSc thesis}
+      \field{year}{2006}
+      \true{nocite}
+      \keyw{own}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
