@@ -18,6 +18,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tikz}
 \usepackage{calc}
+\usepackage{needspace}
 \usepackage{ragged2e}
 \setlength{\JustifyingParindent}{0pt}
 \usepackage{fontawesome5}
@@ -48,7 +49,7 @@
 
 % Section heading: same gradient swish as settings.sty
 \newcommand{\cvsection}[1]{%
-  \par\vspace{8pt}%
+  \par\needspace{5\baselineskip}\vspace{8pt}%
   \begin{tikzpicture}[baseline]
     \shade[left color=Swish!60!white,right color=white] (0,0) rectangle (\linewidth,2.5pt);
     \node[font=\large\bfseries\sffamily,inner sep=0pt,anchor=south west,
@@ -115,8 +116,8 @@
 \vspace{2pt}
 
 %================================ SUMMARY ==============================
-{\justifying\hyphenpenalty=10000\exhyphenpenalty=10000
-ML researcher (Ph.D. candidate, NTU Singapore) with 5+ years building \textbf{deep RL} and \textbf{planning} systems for control, navigation and energy: \textbf{PPO, SAC, A2C, distributional RL}, \textbf{hierarchical RL}, \textbf{MCTS}, \textbf{LLM-based planning for embodied agents} and \textbf{RL fine-tuning of LLMs (GRPO)}, in \textbf{PyTorch}; hands-on robotics with \textbf{ROS 2} on \textbf{Jetson AGX} (F1Tenth race car). Core focus: \textbf{neurosymbolic RL}, combining neural learning with symbolic planning, programmatic policies and formal verification to build agents that are \textbf{sample-efficient, robust, interpretable and verifiably safe}. Former ML Engineer on an RL project with \textbf{Google X}; first-author papers at \textbf{JMLR, \mbox{ECML-PKDD}, ECAI} and \textbf{IEEE ICWS}.\par}
+{\justifying\hyphenpenalty=10000\exhyphenpenalty=10000\emergencystretch=2em
+RL researcher (Ph.D. candidate, NTU Singapore) focused on \textbf{neurosymbolic RL}: agents that are \textbf{sample-efficient, robust, interpretable and verifiably safe}. 5+ years with \textbf{deep RL} (PPO, SAC, distributional and hierarchical RL), \textbf{MCTS} planning, \textbf{LLM-based planning for embodied agents} and \textbf{RL fine-tuning of LLMs} (GRPO); hands-on robotics with \textbf{ROS 2} on Jetson. Former ML Engineer at InFocusp (contract project for \textbf{Google X}); first-author papers at \textbf{JMLR, \mbox{ECML-PKDD}} and \textbf{ECAI}.\par}
 
 
 %================================ SKILLS ===============================
@@ -126,6 +127,21 @@ ML researcher (Ph.D. candidate, NTU Singapore) with 5+ years building \textbf{de
 \cvrow{LLMs \& Deep Learning}{RL fine-tuning of LLMs (GRPO, RLHF, DPO), transformers from scratch, LLM steering for safe embodied planning, LLM-generated policies, Decision Transformers, mechanistic interpretability, MoE-style Top-$k$ routing, variational encoders, differentiable decision trees, computer vision}
 \cvrow{Verification}{Formal verification of RL controllers, reachability analysis, abstract interpretation, LP/MILP (Gurobi)}
 \cvrow{Tools}{Python, PyTorch, Hugging Face (Transformers, TRL), Stable-Baselines3, CleanRL, Gymnasium / OpenAI Gym, MuJoCo, MiniGrid, ROS 2, SLAM \& localisation (EKF, particle filter), NVIDIA Jetson AGX, MATLAB, Arduino, \LaTeX}
+
+%================================ EDUCATION ============================
+\cvsection{Education}
+
+\begin{cventry}{2023 -- 2027\\[-1pt]{\mdseries\color{Muted}expected}}{Ph.D., Computer Science \textperiodcentered{} \mdseries Nanyang Technological University (NTU)}{Singapore}{}
+{\small Thesis: \emph{Neurosymbolic Techniques for Safe and Efficient RL}. Advisors: Arvind Easwaran (NTU), Blaise Genest (CNRS).}
+\end{cventry}
+
+\begin{cventry}{2019 -- 2021}{M.Tech., Computer Science \textperiodcentered{} \mdseries Indian Statistical Institute (ISI)}{Kolkata, India}{}
+{\small Thesis: \emph{User allocation \& service placement in edge computing}. Advisor: Ansuman Banerjee. CPI 82.1\%; top-5 thesis nomination.}
+\end{cventry}
+
+\begin{cventry}{2012 -- 2016}{B.Tech., Electronics \& Instrumentation \textperiodcentered{} \mdseries NIT Silchar}{Silchar, India}{}
+{\small Thesis: \emph{Real-time DC motor position control with PID and fuzzy logic}. Advisor: Munmun Khanra.}
+\end{cventry}
 
 %================================ EXPERIENCE ===========================
 \cvsection{Experience}
@@ -149,7 +165,7 @@ ML researcher (Ph.D. candidate, NTU Singapore) with 5+ years building \textbf{de
 \end{itemize}
 \end{cventry}
 
-\begin{cventry}{2021}{Research Engineer, Autonomous Vehicles}{Hyderabad, India}{TiHAN, IIT Hyderabad}
+\begin{cventry}{2021 -- 2021}{Research Engineer, Autonomous Vehicles}{Hyderabad, India}{TiHAN, IIT Hyderabad}
 \begin{itemize}
   \item Built drive-by-wire \textbf{braking and throttle control} for an autonomous test vehicle on Arduino.
   \item Deployed a \textbf{lane-detection} deep learning model on the \textbf{NVIDIA Jetson AGX} edge platform.
@@ -162,9 +178,9 @@ ML researcher (Ph.D. candidate, NTU Singapore) with 5+ years building \textbf{de
 \begin{cventry}{ECML-PKDD 2026\\[-1pt]{\mdseries\color{Muted}published}}{Neurosymbolic Hierarchical RL with MCTS Planning}{\href{https://github.com/CPS-research-group/ink_bwts}{\icon{\faGithub}{GitHub }code}}{}
 \stack{PyTorch \textperiodcentered{} MuJoCo AntMaze \textperiodcentered{} Point-Maze \textperiodcentered{} MCTS \textperiodcentered{} D* \textperiodcentered{} goal-conditioned RL}
 \begin{itemize}
-  \item Two-level agent: a \textbf{symbolic planner} that updates its world model online, driving \textbf{goal-conditioned neural policies}.
-  \item Designed \textbf{Belief World Tree Search}, an \textbf{MCTS} variant for planning over uncertain maps, with a convergence proof.
-  \item \textbf{30--100$\times$ fewer samples} and \textbf{20$\times$ faster} than the SOTA HRL baseline; \textbf{25\% fewer steps} than D* on MuJoCo AntMaze.
+  \item Two-level agent: a \textbf{symbolic planner} with an online-updated world model drives \textbf{goal-conditioned neural policies}.
+  \item Designed \textbf{Belief World Tree Search}, an \textbf{MCTS} variant for uncertain maps, with a convergence proof.
+  \item \textbf{30--100$\times$ fewer samples}, \textbf{20$\times$ faster} than the SOTA HRL baseline; \textbf{25\% fewer steps} than D* on AntMaze.
 \end{itemize}
 \end{cventry}
 
@@ -197,7 +213,7 @@ ML researcher (Ph.D. candidate, NTU Singapore) with 5+ years building \textbf{de
 \stack{PyTorch \textperiodcentered{} PPO \textperiodcentered{} A2C \textperiodcentered{} QR-DQN \textperiodcentered{} option-critic \textperiodcentered{} MiniGrid \textperiodcentered{} Gymnasium}
 \begin{itemize}
   \item \textbf{Distributional option-critic} agent: quantile critics estimate state criticality; a \textbf{variational encoder} spreads risk evenly across sub-policies.
-  \item PPO/A2C variants on 9 benchmarks: \textbf{+44\% worst-case return} under adversarial perturbations ($-$12\% nominal).
+  \item PPO/A2C variants, 9 benchmarks: \textbf{+44\% worst-case return} under adversarial perturbation ($-$12\% nominal).
 \end{itemize}
 \end{cventry}
 
@@ -230,21 +246,6 @@ ML researcher (Ph.D. candidate, NTU Singapore) with 5+ years building \textbf{de
   \item Supervised \textbf{LLM-generated interpretable RL policies}, \textbf{ARC with LLMs}, \textbf{Decision Transformers}, mechanistic interpretability and CNN robustness.
   \item Technical lead of the \textbf{F1Tenth autonomous racing team}: built the race stack (above) and guided students on control and navigation; VP of CCDS student club (Deep Learning Bootcamp, AI Meetup).
 \end{itemize}
-\end{cventry}
-
-%================================ EDUCATION ============================
-\cvsection{Education}
-
-\begin{cventry}{2023 -- 2027\\[-1pt]{\mdseries\color{Muted}expected}}{Ph.D., Computer Science \textperiodcentered{} \mdseries Nanyang Technological University (NTU)}{Singapore}{}
-{\small Thesis: \emph{Neurosymbolic Techniques for Safe and Efficient RL}. Advisors: Arvind Easwaran (NTU), Blaise Genest (CNRS).}
-\end{cventry}
-
-\begin{cventry}{2019 -- 2021}{M.Tech., Computer Science \textperiodcentered{} \mdseries Indian Statistical Institute (ISI)}{Kolkata, India}{}
-{\small Thesis: \emph{User allocation \& service placement in edge computing}. Advisor: Ansuman Banerjee. CPI 82.1\%; top-5 thesis nomination.}
-\end{cventry}
-
-\begin{cventry}{2012 -- 2016}{B.Tech., Electronics \& Instrumentation \textperiodcentered{} \mdseries NIT Silchar}{Silchar, India}{}
-{\small Thesis: \emph{Real-time DC motor position control with PID and fuzzy logic}. Advisor: Munmun Khanra.}
 \end{cventry}
 
 %================================ AWARDS / PUBS ========================

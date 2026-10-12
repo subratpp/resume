@@ -192,7 +192,7 @@ Advisor: Munmun Khanra \quad CPI: 7.92/10
 \end{itemize}
 \end{cventry}
 
-\begin{cventry}{2021}{Research Engineer}{Hyderabad, India}{TiHAN, IIT Hyderabad}
+\begin{cventry}{2021 -- 2021}{Research Engineer}{Hyderabad, India}{TiHAN, IIT Hyderabad}
 \begin{itemize}
   \item Developed braking and throttle control systems using Arduino for a test vehicle.
   \item Deployed a lane detection model on the NVIDIA AGX board.
@@ -255,12 +255,18 @@ Built the ROS 2 race stack on Jetson AGX and advised students on control and nav
 
 %================================ REFERENCES ===========================
 \needspace{6\baselineskip}
-\cvsection{References}
-% \referee{relationship}{Name}{Position, Affiliation}{email}
-\newcommand{\referee}[4]{\cvrow{#1}{\textbf{#2}, #3\hfill{\small\href{mailto:#4}{#4}}}}
+\cvsection{Academic References}
+% \referee{relationship}{Name}{Position, Affiliation}{email (may be empty)}
+\newcommand{\referee}[4]{\cvrow{#1}{\textbf{#2}, #3\ifx\relax#4\relax\else\hfill{\small\href{mailto:#4}{#4}}\fi}}
 \referee{Ph.D. Advisor}{Arvind Easwaran}{Associate Professor, CCDS, NTU Singapore}{arvinde@ntu.edu.sg}
 \referee{Ph.D. Advisor}{Blaise Genest}{Research Scientist, CNRS@CREATE, Singapore}{blaise.genest@cnrsatcreate.sg}
 \referee{M.Tech Advisor}{Ansuman Banerjee}{Professor, ISI Kolkata, India}{ansuman@isical.ac.in}
+
+%================================ COLLABORATORS ========================
+\cvsection{Academic Collaborators}
+\referee{Verification}{\DJ{}or\dj{}e \v{Z}ikeli\'c}{Assistant Professor, CCDS, NTU Singapore}{djordje.zikelic@ntu.edu.sg}
+\referee{Decision Trees}{P. N. Suganthan}{Research Professor, KINDI, Qatar University}{p.n.suganthan@qu.edu.qa}
+\referee{Edge AI}{Arani Bhattacharya}{Assistant Professor, IIIT Delhi, India}{arani@iiitd.ac.in}
 
 
 \end{document}
