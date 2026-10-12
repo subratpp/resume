@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic CV -- Subrat Prasad Panda (postdoc / faculty applications)
+% Same visual system as cv_industry.tex (Cochineal + Cabin, green swish
+% headings, crimson keys and bullets).
+% Publications are generated from references.bib.
+% Build: pdflatex -> biber -> pdflatex -> pdflatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,hmargin=1.8cm,top=1.0cm,bottom=1.1cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[p,lf]{cochineal}
+\usepackage[medium,bold]{cabin}
+\usepackage[varqu,varl,scale=0.88]{zi4}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage{ragged2e}
+\setlength{\JustifyingParindent}{0pt}
+\usepackage{needspace}
+\usepackage{fontawesome5}
+\usepackage{simpleicons}
+\usepackage{accsupp}
+\usepackage[hyphens]{url}
+\usepackage[style=ieee,sorting=ydnt,maxnames=99,defernumbers=true]{biblatex}
+\usepackage{csquotes}
+\usepackage[colorlinks=true,allcolors=black,urlcolor=Marker!80!black]{hyperref}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%------------------------------- PALETTE ------------------------------
+\definecolor{Swish}{HTML}{88AC0B}
+\definecolor{Marker}{HTML}{B6073F}
+\definecolor{Ink}{HTML}{222222}
+\definecolor{Muted}{HTML}{5F6368}
+\definecolor{Sub}{HTML}{1F5A96}  % blue for subsection headings
+\color{Ink}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedright
+\urlstyle{same}
+
+%------------------------------- HELPERS ------------------------------
+% Icon that extracts as text (#2) in the PDF text layer
+\newcommand{\icon}[2]{\BeginAccSupp{method=escape,ActualText={#2}}%
+  \makebox[1.3em]{\color{Marker!85!black}#1}\EndAccSupp{}\hspace{1pt}}
+
+% Section heading with gradient swish
+\newcommand{\cvsection}[1]{%
+  \par\needspace{4\baselineskip}\vspace{13pt}%
+  \begin{tikzpicture}[baseline]
+    \shade[left color=Swish!60!white,right color=white] (0,0) rectangle (\linewidth,2.5pt);
+    \node[font=\Large\bfseries\sffamily,inner sep=0pt,anchor=south west,
+          text depth=.5ex,text height=1.5ex] at (1pt,2pt) {#1};
+  \end{tikzpicture}\par\vspace{4pt}}
+
+% Left key column (dates / labels)
+\newlength{\keywidth}\setlength{\keywidth}{2.3cm}
+\newcommand{\keyfont}{\sffamily\footnotesize\bfseries\color{Marker!80!black}}
+\newcommand{\keylabel}[1]{\raisebox{0pt}[\height][0pt]{\parbox[t]{\labelwidth}{\leavevmode\raggedright\keyfont #1}}}
+
+% \begin{cventry}{key}{Title}{Right-aligned info}{Subtitle line (optional)}
+\newenvironment{cventry}[4]{%
+  \begin{list}{}{\setlength{\leftmargin}{\keywidth}\setlength{\labelwidth}{\keywidth-0.4em}%
+    \setlength{\labelsep}{0.4em}\setlength{\topsep}{0pt}\setlength{\itemsep}{0pt}%
+    \setlength{\parsep}{0pt}\setlength{\partopsep}{0pt}}
+  \item[{\keylabel{#1}}]%
+    {\sffamily\bfseries #2}\hfill{\sffamily\small\color{Muted}#3}%
+    \ifx\relax#4\relax\else\\{\small\itshape\color{Muted}#4}\fi\par
+}{\end{list}\vspace{5pt}}
+
+% Single key/value row (gap after each row adjustable per section)
+\newlength{\rowgap}\setlength{\rowgap}{2.5pt}
+\newcommand{\cvrow}[2]{%
+  \begin{list}{}{\setlength{\leftmargin}{\keywidth}\setlength{\labelwidth}{\keywidth-0.4em}%
+    \setlength{\labelsep}{0.4em}\setlength{\topsep}{0pt}\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}\setlength{\partopsep}{0pt}}
+  \item[{\keylabel{#1}}] #2
+  \end{list}\vspace{\rowgap}}
+
+% Blue subsection heading inside a section
+\newcommand{\subgroup}[1]{{\sffamily\bfseries\color{Sub}#1}\par\vspace{3pt}}
+
+\setlist[itemize]{leftmargin=1.05em,itemsep=1pt,topsep=2pt,parsep=0pt,
+  label={\color{Marker!80!black}\scriptsize$\blacktriangleright$}}
+
+%------------------------------- PUBLICATIONS -------------------------
+\addbibresource{references.bib}
+
+% Bold own name
+\DeclareNameFormat{given-family}{%
+  \ifboolexpr{test {\ifdefstring{\namepartfamily}{Panda}}}
+    {\textbf{\usebibmacro{name:given-family}{\namepartfamily}{\namepartgiveni}{\namepartprefix}{\namepartsuffix}}}
+    {\usebibmacro{name:given-family}{\namepartfamily}{\namepartgiveni}{\namepartprefix}{\namepartsuffix}}%
+  \usebibmacro{name:andothers}}
+
+% Numbered crimson circles
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+  \node[shape=circle,text=white,fill=Marker!80!black,font=\sffamily\scriptsize\bfseries,
+        inner sep=1pt,text height=1.35ex,minimum width=1.5em,text centered] (char) {#1};}}
+\newcounter{bibitem}
+\AtBeginBibliography{\setcounter{bibitem}{1}}
+\DeclareFieldFormat{labelnumberwidth}{\makebox[2.4em][l]{\circled{\thebibitem}}}
+\AtEveryBibitem{\stepcounter{bibitem}}
+\setlength{\biblabelsep}{0pt}
+
+% Compact entries; titles kept exactly as in the .bib, set in semibold sans
+\renewcommand*{\bibfont}{\small}
+\setlength{\bibitemsep}{0.9ex}
+\setlength{\bibhang}{2.4em}
+\DeclareFieldFormat{titlecase}{#1}
+\DeclareFieldFormat{sentencecase}{#1}
+\DeclareFieldFormat*{title}{{\sffamily\bfseries #1}\isdot}
+\AtEveryBibitem{\clearfield{url}\clearfield{doi}\clearfield{month}\clearlist{organization}}
+
+\defbibheading{pubgroup}{\par\vspace{5pt}{\sffamily\bfseries\color{Sub}#1}\par\vspace{3pt}}
+
+% Papers currently under review (listed separately)
+\DeclareBibliographyCategory{underreview}
+\addtocategory{underreview}{panda2027a,panda2027b,panda2027_workshop_a}
+
+\begin{document}
+
+%================================ HEADER ===============================
+% \contact{icon}{text for parsers}{content}
+\newcommand{\contact}[3]{\mbox{\icon{#1}{#2}#3}}
+{\fontsize{25}{28}\selectfont\sffamily\bfseries Subrat Prasad Panda}\\[3pt]
+{\sffamily\large\color{Marker!85!black} Ph.D. Candidate, Computer Science, NTU Singapore}\\[1pt]
+{\sffamily\small\color{Muted} Trustworthy RL \textperiodcentered{} Neurosymbolic AI}\\[6pt]
+{\sffamily\small
+\contact{\faEnvelope[regular]}{Email: }{\href{mailto:subratpr001@e.ntu.edu.sg}{subratpr001@e.ntu.edu.sg}}\hfill
+\contact{\faMobile*}{Phone: }{+65 ****3021}\hfill
+\contact{\faGlobe}{Website: }{\href{https://subratpp.github.io/}{subratpp.github.io}}\hfill
+\contact{\faMapMarker*}{Location: }{Singapore}\\[2pt]
+\contact{{\scriptsize\simpleicon{googlescholar}}}{Scholar: }{\href{https://scholar.google.com/citations?user=-kOZ8c0AAAAJ&hl=en}{Google Scholar}}\hfill
+\contact{\faGithub}{GitHub: }{\href{https://github.com/subratpp}{github.com/subratpp}}\hfill
+\contact{\faLinkedin}{LinkedIn: }{\href{https://www.linkedin.com/in/subratpp/}{linkedin.com/in/subratpp}}\par}
+\vspace{4pt}
+
+
+%================================ RESEARCH =============================
+\cvsection{Research Statement}
+{\justifying
+I am broadly interested in \textbf{Trustworthy Reinforcement Learning}, particularly in designing interpretable, robust, and verifiable policies for safety-critical domains. My current work focuses on \textbf{Neurosymbolic} approaches such as programmatic policies, combining explicit knowledge with learning to bridge System~1 (neural) and System~2 (symbolic) reasoning.\par}
+
+%================================ SKILLS ===============================
+\cvsection{Research Areas and Skills}
+{\setlength{\rowgap}{5.5pt}
+\cvrow{Reinforcement Learning}{Hierarchical and goal-conditioned RL, sample-efficient learning in sparse-reward and long-horizon tasks, robust and distributional RL, RL fine-tuning of foundation models}
+\cvrow{Neurosymbolic AI}{Programmatic and interpretable policies (differentiable decision trees), symbolic planning with incremental knowledge, interpretable state abstractions and world models}
+\cvrow{Safety \& Verification}{Formal verification of learned controllers, reach-avoid and safety certificates, abstraction-based reasoning for safety-critical systems}
+\cvrow{Applications}{Cyber-physical systems, microgrid energy management, autonomous navigation and robotics, LLM-based planning for embodied agents}
+\cvrow{Programming}{Python, C, PyTorch, TensorFlow, ROS 2, MATLAB, \LaTeX}
+\cvrow{Coursework}{Mathematical Statistics, Deep Learning, Machine Learning, Computer Vision}
+}
+
+%================================ EDUCATION ============================
+\cvsection{Education}
+
+\begin{cventry}{2023 -- 2027\\[-1pt]{\mdseries\color{Muted}expected}}{Ph.D., Computer Science}{Singapore}{Nanyang Technological University (NTU)}
+Thesis: \emph{Neurosymbolic Techniques for Safe and Efficient Reinforcement Learning}\\
+Advisors: Arvind Easwaran (NTU), Blaise Genest (IPAL, CNRS France \& Singapore)
+\end{cventry}
+
+\begin{cventry}{2019 -- 2021}{M.Tech., Computer Science}{Kolkata, India}{Indian Statistical Institute (ISI)}
+Thesis: \emph{Strategies for User Allocation and Service Placement in Multi-Access Edge Computing}\\
+Advisor: Ansuman Banerjee \quad CPI: 82.1\%
+\end{cventry}
+
+\begin{cventry}{2012 -- 2016}{B.Tech., Electronics and Instrumentation}{Silchar, India}{National Institute of Technology (NIT) Silchar}
+Thesis: \emph{Real-Time Position Control of DC Motor using PID and Fuzzy Logic}\\
+Advisor: Munmun Khanra \quad CPI: 7.92/10
+\end{cventry}
+
+%================================ EXPERIENCE ===========================
+\cvsection{Research Experience}
+
+\begin{cventry}{2022 -- 2023}{Research Associate}{Singapore}{CNRS@CREATE}
+\begin{itemize}
+  \item Designed a granular control system for microgrids using Deep Reinforcement Learning.
+\end{itemize}
+\end{cventry}
+
+\begin{cventry}{2021 -- 2022}{Machine Learning Engineer}{Pune, India}{InFocusp Innovation Pvt.\ Ltd., under attachment to Google X (USA)}
+\begin{itemize}
+  \item Developed solutions for the Abstraction and Reasoning Challenge (ARC) using Reinforcement Learning.
+\end{itemize}
+\end{cventry}
+
+\begin{cventry}{2021}{Research Engineer}{Hyderabad, India}{TiHAN, IIT Hyderabad}
+\begin{itemize}
+  \item Developed braking and throttle control systems using Arduino for a test vehicle.
+  \item Deployed a lane detection model on the NVIDIA AGX board.
+\end{itemize}
+\end{cventry}
+
+%================================ PUBLICATIONS =========================
+\cvsection{Publications}
+\nocite{*}
+\printbibliography[heading=pubgroup,title={Journal Articles},type=article,notcategory=underreview]
+\printbibliography[heading=pubgroup,title={Conference Proceedings},type=inproceedings,notcategory=underreview]
+\printbibliography[heading=pubgroup,title={Under Review},category=underreview]
+\printbibliography[heading=pubgroup,title={Workshops and Talks},type=misc,notcategory=underreview]
+
+%================================ SOFTWARE =============================
+\cvsection{Open-Source Software and Educational Content}
+% Name links to the repository
+\newcommand{\repo}[2]{\href{#2}{#1\,\BeginAccSupp{method=escape,ActualText={}}{\scriptsize\faGithub}\EndAccSupp{}}}
+
+\subgroup{Research Code}
+\cvrow{\repo{DTSemNet}{https://github.com/CPS-research-group/dtsemnet}}{Differentiable oblique decision trees and tree policies for RL (JMLR 2026, ECAI 2024).}
+\cvrow{\repo{InK-BWTS}{https://github.com/CPS-research-group/ink_bwts}}{Neurosymbolic hierarchical RL with Belief World Tree Search (ECML-PKDD 2026).}
+\cvrow{\repo{F1Tenth}{https://github.com/subratpp/f1tenth}}{ROS 2 race stack (SLAM, particle-filter localisation, Pure Pursuit, etc.) on Jetson AGX.}
+
+\vspace{3pt}
+\subgroup{Educational Content {\mdseries\small\color{Muted}(ongoing effort)}}
+\cvrow{\repo{Deep RL Jutsu}{https://github.com/subratpp/deep-rl-jutsu}}{Notebook-style tutorials implementing deep RL algorithms from scratch (DQN, DDPG, SAC, PPO), with a curated guide to RL libraries and resources.}
+\cvrow{\repo{GenAI}{https://github.com/subratpp/generative_ai}}{Small-scale implementations of generative models (VAE, GAN, diffusion, state-space models, CLIP, VLA) on toy problems to explain how they work.}
+\cvrow{\repo{RLFT}{https://github.com/subratpp/rlft}}{Tutorial series on RL fine-tuning of foundation models: RLHF, DPO and GRPO, from a from-scratch GPT to a pretrained LLM.}
+
+%================================ AWARDS ===============================
+\cvsection{Awards and Scholarships}
+\cvrow{2023 -- 2027}{\textbf{DesCartes Scholarship}: Ph.D. scholarship awarded by CNRS@CREATE under the DesCartes project (research collaboration between Singapore and France).}
+\cvrow{2021}{\textbf{M.Tech Best Thesis Nomination}: ranked among the top 5 theses of the batch.}
+\cvrow{2019 -- 2021}{\textbf{M.Tech Scholarship}: scholarship awarded to pursue a master's degree.}
+\cvrow{2006 -- 2012}{\textbf{Jawahar Navodaya Vidyalaya (JNV) Scholarship}: fully funded residential education from Class 6 to 12.}
+
+%================================ ACADEMIC SERVICES ====================
+\cvsection{Academic Services}
+
+\subgroup{Teaching and Mentoring}
+\begin{cventry}{Final Year\\Projects}{Undergraduate Final Year Projects}{NTU}{Project supervision}
+\emph{SafeDAG: Precedence-Constrained LLM Steering for Safer Planning in Embodied Agents} (ongoing); programmatic policies for interpretable RL using pre-trained models / LLMs; robustness vs.\ explainability trade-offs in CNNs.
+\end{cventry}
+
+\begin{cventry}{URECA}{Undergraduate Research Experience on Campus}{NTU}{Research mentoring}
+Mechanistic interpretability of Decision Transformers; ARC reasoning with LLMs; physics-inspired model-based RL; residual reinforcement learning.
+\end{cventry}
+
+\begin{cventry}{F1Tenth}{F1Tenth Autonomous Racing Team}{NTU}{Mentor}
+Built the ROS 2 race stack on Jetson AGX and advised students on control and navigation strategies.
+\end{cventry}
+
+\subgroup{Reviewing}
+\cvrow{Reviewer}{CAV, AAAI, ECAI, IEEE TSMC, RTSS, NeurIPS, AAMAS, NeSy.}
+
+\vspace{3pt}
+\subgroup{Leadership}
+\cvrow{Vice President}{\textbf{CCDS Student Club}, NTU: organized events such as the Deep Learning Bootcamp and AI Meetup.}
+
+%================================ REFERENCES ===========================
+\needspace{6\baselineskip}
+\cvsection{References}
+% \referee{relationship}{Name}{Position, Affiliation}{email}
+\newcommand{\referee}[4]{\cvrow{#1}{\textbf{#2}, #3\hfill{\small\href{mailto:#4}{#4}}}}
+\referee{Ph.D. Advisor}{Arvind Easwaran}{Associate Professor, CCDS, NTU Singapore}{arvinde@ntu.edu.sg}
+\referee{Ph.D. Advisor}{Blaise Genest}{Research Scientist, CNRS@CREATE, Singapore}{blaise.genest@cnrsatcreate.sg}
+\referee{M.Tech Advisor}{Ansuman Banerjee}{Professor, ISI Kolkata, India}{ansuman@isical.ac.in}
+
+
+\end{document}
