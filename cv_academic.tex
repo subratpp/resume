@@ -120,9 +120,32 @@
 
 \defbibheading{pubgroup}{\par\vspace{5pt}{\sffamily\bfseries\color{Sub}#1}\par\vspace{3pt}}
 
-% Papers currently under review (listed separately)
-\DeclareBibliographyCategory{underreview}
-\addtocategory{underreview}{panda2027a,panda2027b,panda2027_workshop_a}
+% references.bib uses website-friendly entry types. Map them onto
+% biblatex types, remembering the original kind in `entrysubtype':
+%   @journal -> article        @conference -> inproceedings
+%   @workshop -> misc/workshop @talk -> misc/talk
+%   @underreview -> misc/underreview (no venue: double-blind)
+% New entries only need the right @type; no edits here.
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{\step[typesource=journal,     typetarget=article,       final]}
+    \map{\step[typesource=conference,  typetarget=inproceedings, final]}
+    \map{\step[typesource=workshop,    typetarget=misc,          final]
+         \step[fieldset=entrysubtype,  fieldvalue=workshop]}
+    \map{\step[typesource=talk,        typetarget=misc,          final]
+         \step[fieldset=entrysubtype,  fieldvalue=talk]}
+    \map{\step[typesource=underreview, typetarget=misc,          final]
+         \step[fieldset=entrysubtype,  fieldvalue=underreview]
+         \step[fieldset=howpublished,  fieldvalue={Under review}]}
+  }
+}
+
+% Topic chips from the `keywords' field, shown after each entry
+\newcommand{\pubchip}[1]{\tikz[baseline=(c.base)]\node[fill=Sub!8,draw=Sub!35,line width=0.4pt,
+  rounded corners=1.5pt,inner xsep=2.5pt,inner ysep=0.8pt,text=Sub,
+  font=\sffamily\scriptsize] (c) {#1};\hspace{2pt}}
+\renewbibmacro*{finentry}{\finentry
+  \iffieldundef{keywords}{}{\hspace{0.4em}\forcsvfield{\pubchip}{keywords}}}
 
 \begin{document}
 
@@ -202,10 +225,11 @@ Advisor: Munmun Khanra \quad CPI: 7.92/10
 %================================ PUBLICATIONS =========================
 \cvsection{Publications}
 \nocite{*}
-\printbibliography[heading=pubgroup,title={Journal Articles},type=article,notcategory=underreview]
-\printbibliography[heading=pubgroup,title={Conference Proceedings},type=inproceedings,notcategory=underreview]
-\printbibliography[heading=pubgroup,title={Under Review},category=underreview]
-\printbibliography[heading=pubgroup,title={Workshops and Talks},type=misc,notcategory=underreview]
+\printbibliography[heading=pubgroup,title={Under Review},subtype=underreview]
+\printbibliography[heading=pubgroup,title={Journal Articles},type=article]
+\printbibliography[heading=pubgroup,title={Conference Proceedings},type=inproceedings]
+\printbibliography[heading=pubgroup,title={Workshop Papers},subtype=workshop]
+\printbibliography[heading=pubgroup,title={Talks and Tutorials},subtype=talk]
 
 %================================ SOFTWARE =============================
 \cvsection{Open-Source Software and Educational Content}
